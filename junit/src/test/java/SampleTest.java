@@ -34,8 +34,6 @@ public class SampleTest {
         Assert.assertFalse(title.isEmpty());}
 
 
-
-
     @After
     public void setDown() {
         if (driver != null) {
