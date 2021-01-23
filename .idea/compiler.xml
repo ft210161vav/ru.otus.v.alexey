@@ -13,6 +13,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ru.otus" target="1.8" />
       <module name="test-junit" target="15" />
     </bytecodeTargetLevel>
   </component>

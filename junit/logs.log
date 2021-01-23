@@ -57,3 +57,74 @@
 2021-01-20 10:30:32,403 INFO S.class [main] Драйвер поднят
 2021-01-20 10:30:37,480 INFO S.class [main] Открыта страница Otus.ru
 2021-01-20 10:30:38,318 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:00:12,642 INFO S.class [main] Драйвер поднят
+2021-01-20 15:00:16,475 INFO S.class [main] Открыта страница Otus.ru
+2021-01-20 15:00:17,633 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:00:21,054 INFO S.class [main] Драйвер поднят
+2021-01-20 15:00:24,288 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:00:27,735 INFO S.class [main] Драйвер поднят
+2021-01-20 15:00:33,185 INFO S.class [main] [Otus2=Value2; path=/; domain=otus.ru;secure;, Otus1=Value1; path=/; domain=otus.ru;secure;, first-visit=1611147628.5681283; expires=Сб, 20 янв 2024 03:00:28 EET; path=/; domain=otus.ru, _ga=GA1.2.317617344.1611147629; expires=Пт, 20 янв 2023 03:00:29 EET; path=/; domain=.otus.ru, _fbp=fb.1.1611147632762.1284475091; expires=Вт, 20 апр 2021 04:00:32 EEST; path=/; domain=.otus.ru, sessionid=mpid2qwe5orat7e0i6lh3tqplxivsv51; expires=Вт, 20 апр 2021 04:00:28 EEST; path=/; domain=otus.ru, oid=6e88d98c6e561c84df9d7e80d369791b; expires=Сб, 20 янв 2024 03:00:28 EET; path=/; domain=.otus.ru, Otus4=Value4; path=/; domain=otus.ru;secure;, _gid=GA1.2.1276946868.1611147629; expires=Чт, 21 янв 2021 03:00:29 EET; path=/; domain=.otus.ru, visits-count=1; expires=Сб, 20 янв 2024 03:00:28 EET; path=/; domain=otus.ru, Otus3=Value3; path=/; domain=otus.ru;secure;]
+2021-01-20 15:00:33,197 INFO S.class [main] Otus1=Value1; path=/; domain=otus.ru;secure;
+2021-01-20 15:00:33,352 INFO S.class [main] 1
+2021-01-20 15:00:34,142 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:13:35,128 INFO S.class [main] Драйвер поднят
+2021-01-20 15:13:38,351 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:14:20,238 INFO S.class [main] Драйвер поднят
+2021-01-20 15:14:23,429 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:15:41,835 INFO S.class [main] Драйвер поднят
+2021-01-20 15:15:45,370 INFO S.class [main] Открыта страница Otus.ru
+2021-01-20 15:15:46,180 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:15:49,654 INFO S.class [main] Драйвер поднят
+2021-01-20 15:15:52,875 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:15:56,260 INFO S.class [main] Драйвер поднят
+2021-01-20 15:16:04,615 INFO S.class [main] [Otus2=Value2; path=/; domain=otus.ru;secure;, Otus1=Value1; path=/; domain=otus.ru;secure;, first-visit=1611148557.6533778; expires=Сб, 20 янв 2024 03:15:57 EET; path=/; domain=otus.ru, _ga=GA1.2.402053386.1611148559; expires=Пт, 20 янв 2023 03:15:59 EET; path=/; domain=.otus.ru, _fbp=fb.1.1611148560186.130562733; expires=Вт, 20 апр 2021 04:16:00 EEST; path=/; domain=.otus.ru, sessionid=fy6h7mqvxmq2ozb1x1kewpu2w52rp6u2; expires=Вт, 20 апр 2021 04:15:57 EEST; path=/; domain=otus.ru, oid=2eaa3588f586d9f0fc14e0fbe1469424; expires=Сб, 20 янв 2024 03:15:57 EET; path=/; domain=.otus.ru, Otus4=Value4; path=/; domain=otus.ru;secure;, _gid=GA1.2.859200978.1611148559; expires=Чт, 21 янв 2021 03:15:59 EET; path=/; domain=.otus.ru, visits-count=1; expires=Сб, 20 янв 2024 03:15:57 EET; path=/; domain=otus.ru, Otus3=Value3; path=/; domain=otus.ru;secure;]
+2021-01-20 15:16:04,625 INFO S.class [main] Otus1=Value1; path=/; domain=otus.ru;secure;
+2021-01-20 15:16:04,731 INFO S.class [main] 0
+2021-01-20 15:16:05,437 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:17:48,952 INFO S.class [main] Драйвер поднят
+2021-01-20 15:17:53,022 INFO S.class [main] Открыта страница Otus.ru
+2021-01-20 15:17:53,727 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:17:57,073 INFO S.class [main] Драйвер поднят
+2021-01-20 15:18:00,269 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:18:03,760 INFO S.class [main] Драйвер поднят
+2021-01-20 15:18:09,415 INFO S.class [main] [Otus2=Value2; path=/; domain=otus.ru;secure;, Otus1=Value1; path=/; domain=otus.ru;secure;, first-visit=1611148684.4775815; expires=Сб, 20 янв 2024 03:18:04 EET; path=/; domain=otus.ru, _ga=GA1.2.1139288407.1611148686; expires=Пт, 20 янв 2023 03:18:05 EET; path=/; domain=.otus.ru, _fbp=fb.1.1611148689001.1148453971; expires=Вт, 20 апр 2021 04:18:09 EEST; path=/; domain=.otus.ru, sessionid=pd7q455mxt1mtso7wlmq20hgiuw2i6ql; expires=Вт, 20 апр 2021 04:18:04 EEST; path=/; domain=otus.ru, oid=5acfc53c54da21a10b6dd727cee2b821; expires=Сб, 20 янв 2024 03:18:04 EET; path=/; domain=.otus.ru, Otus4=Value4; path=/; domain=otus.ru;secure;, _gid=GA1.2.1326923966.1611148686; expires=Чт, 21 янв 2021 03:18:05 EET; path=/; domain=.otus.ru, visits-count=1; expires=Сб, 20 янв 2024 03:18:04 EET; path=/; domain=otus.ru, Otus3=Value3; path=/; domain=otus.ru;secure;]
+2021-01-20 15:18:09,424 INFO S.class [main] Otus1=Value1; path=/; domain=otus.ru;secure;
+2021-01-20 15:18:09,560 INFO S.class [main] 1
+2021-01-20 15:18:10,736 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:19:41,066 INFO S.class [main] Драйвер поднят
+2021-01-20 15:19:45,364 INFO S.class [main] Открыта страница Otus.ru
+2021-01-20 15:19:46,951 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:19:50,256 INFO S.class [main] Драйвер поднят
+2021-01-20 15:19:53,313 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:19:56,729 INFO S.class [main] Драйвер поднят
+2021-01-20 15:20:01,129 INFO S.class [main] [Otus2=Value2; path=/; domain=otus.ru;secure;, Otus1=Value1; path=/; domain=otus.ru;secure;, first-visit=1611148797.9108114; expires=Сб, 20 янв 2024 03:19:57 EET; path=/; domain=otus.ru, _ga=GA1.2.1869190901.1611148799; expires=Пт, 20 янв 2023 03:19:58 EET; path=/; domain=.otus.ru, _fbp=fb.1.1611148800906.1791149626; expires=Вт, 20 апр 2021 04:20:00 EEST; path=/; domain=.otus.ru, sessionid=3fpjd9mv2e72joafmib1yyz6etxvi01u; expires=Вт, 20 апр 2021 04:19:57 EEST; path=/; domain=otus.ru, oid=47a0e86630c02336648a06bf4ccd3211; expires=Сб, 20 янв 2024 03:19:57 EET; path=/; domain=.otus.ru, Otus4=Value4; path=/; domain=otus.ru;secure;, _gid=GA1.2.1213159532.1611148799; expires=Чт, 21 янв 2021 03:19:58 EET; path=/; domain=.otus.ru, visits-count=1; expires=Сб, 20 янв 2024 03:19:57 EET; path=/; domain=otus.ru, Otus3=Value3; path=/; domain=otus.ru;secure;]
+2021-01-20 15:20:01,138 INFO S.class [main] Otus1=Value1; path=/; domain=otus.ru;secure;
+2021-01-20 15:20:01,238 INFO S.class [main] 0
+2021-01-20 15:20:02,025 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:52:56,300 INFO S.class [main] Драйвер поднят
+2021-01-20 15:52:59,588 INFO S.class [main] Открыта страница Otus.ru
+2021-01-20 15:53:00,381 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:53:03,709 INFO S.class [main] Драйвер поднят
+2021-01-20 15:53:06,313 INFO S.class [main] (10, 10)
+2021-01-20 15:53:07,307 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:53:10,823 INFO S.class [main] Драйвер поднят
+2021-01-20 15:53:15,216 INFO S.class [main] [Otus2=Value2; path=/; domain=otus.ru;secure;, Otus1=Value1; path=/; domain=otus.ru;secure;, first-visit=1611150792.370195; expires=Сб, 20 янв 2024 03:53:12 EET; path=/; domain=otus.ru, _ga=GA1.2.1092132950.1611150794; expires=Пт, 20 янв 2023 03:53:13 EET; path=/; domain=.otus.ru, _fbp=fb.1.1611150794794.1208825176; expires=Вт, 20 апр 2021 04:53:14 EEST; path=/; domain=.otus.ru, sessionid=xixxi2bw0av7166ohcoz0dnqjxe8upoi; expires=Вт, 20 апр 2021 04:53:12 EEST; path=/; domain=otus.ru, oid=c388d41cd05e3f6f6f5bed8b6c83c280; expires=Сб, 20 янв 2024 03:53:12 EET; path=/; domain=.otus.ru, Otus4=Value4; path=/; domain=otus.ru;secure;, _gid=GA1.2.540155690.1611150794; expires=Чт, 21 янв 2021 03:53:13 EET; path=/; domain=.otus.ru, visits-count=1; expires=Сб, 20 янв 2024 03:53:12 EET; path=/; domain=otus.ru, Otus3=Value3; path=/; domain=otus.ru;secure;]
+2021-01-20 15:53:15,226 INFO S.class [main] Otus1=Value1; path=/; domain=otus.ru;secure;
+2021-01-20 15:53:15,341 INFO S.class [main] 1
+2021-01-20 15:53:16,058 INFO S.class [main] Драйвер закрыт
+2021-01-20 15:54:42,341 INFO S.class [main] Драйвер поднят
+2021-01-20 15:54:45,029 INFO S.class [main] (10, 10)
+2021-01-20 15:54:45,712 INFO S.class [main] Драйвер закрыт
+2021-01-20 16:05:55,530 INFO S.class [main] Драйвер поднят
+2021-01-20 16:05:58,233 INFO S.class [main] (10, 10)
+2021-01-20 16:06:00,264 INFO S.class [main] Драйвер закрыт
+2021-01-20 17:46:32,946 INFO H.class [main] Открыта страница: https://yandex.ru
+2021-01-20 17:46:35,225 INFO H.class [main] Полноэкранный режим
+2021-01-20 17:46:36,572 INFO H.class [main] Драйвер закрыт
+2021-01-21 11:37:07,342 INFO H.class [main] Открыта страница: https://yandex.ru
+2021-01-21 11:37:09,720 INFO H.class [main] Полноэкранный режим
+2021-01-21 11:37:11,262 INFO H.class [main] Драйвер закрыт
+2021-01-21 14:56:56,942 INFO H.class [main] Открыта страница: https://msk.tele2.ru/shop/number
+2021-01-21 14:56:59,155 INFO H.class [main] Драйвер закрыт
+2021-01-23 19:19:36,114 INFO H.class [main] Открыта страница: https://msk.tele2.ru/shop/number
+2021-01-23 19:19:39,674 INFO H.class [main] Драйвер закрыт
