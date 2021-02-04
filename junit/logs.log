@@ -128,3 +128,364 @@
 2021-01-21 14:56:59,155 INFO H.class [main] Драйвер закрыт
 2021-01-23 19:19:36,114 INFO H.class [main] Открыта страница: https://msk.tele2.ru/shop/number
 2021-01-23 19:19:39,674 INFO H.class [main] Драйвер закрыт
+2021-01-23 22:37:17,968 INFO L.class [main] Открыта страница Otus.ru
+2021-01-23 22:37:18,711 INFO L.class [main] Драйвер закрыт
+2021-01-23 22:37:24,756 INFO L.class [main] (10, 10)
+2021-01-23 22:37:25,949 INFO L.class [main] Драйвер закрыт
+2021-01-23 22:37:44,612 INFO L.class [main] [Otus2=Value2; path=/; domain=otus.ru;secure;, Otus1=Value1; path=/; domain=otus.ru;secure;, first-visit=1611434250.340182; expires=Вт, 23 янв 2024 10:37:30 EET; path=/; domain=otus.ru, _ga=GA1.2.852611103.1611434251; expires=Пн, 23 янв 2023 10:37:31 EET; path=/; domain=.otus.ru, _fbp=fb.1.1611434252718.727595918; expires=Пт, 23 апр 2021 11:37:33 EEST; path=/; domain=.otus.ru, sessionid=h649aaor24bv74i0z7bnggx9zv2cbmvq; expires=Пт, 23 апр 2021 11:37:30 EEST; path=/; domain=otus.ru, oid=7732be0461589a8d0c0f5dd82e895589; expires=Вт, 23 янв 2024 10:37:30 EET; path=/; domain=.otus.ru, Otus4=Value4; path=/; domain=otus.ru;secure;, _gid=GA1.2.1138178520.1611434251; expires=Вс, 24 янв 2021 10:37:31 EET; path=/; domain=.otus.ru, visits-count=1; expires=Вт, 23 янв 2024 10:37:30 EET; path=/; domain=otus.ru, Otus3=Value3; path=/; domain=otus.ru;secure;]
+2021-01-23 22:37:44,621 INFO L.class [main] Otus1=Value1; path=/; domain=otus.ru;secure;
+2021-01-23 22:37:44,729 INFO L.class [main] 1
+2021-01-23 22:37:45,442 INFO L.class [main] Драйвер закрыт
+2021-01-23 22:49:31,319 INFO S.class [main] Драйвер поднят
+2021-01-23 22:49:34,092 INFO S.class [main] (10, 10)
+2021-01-23 22:49:35,305 INFO S.class [main] Драйвер закрыт
+2021-01-23 22:57:11,189 INFO L.class [main] Старт
+2021-01-23 22:57:11,954 INFO L.class [main] Финиш
+2021-01-23 22:58:52,445 INFO L.class [main] Старт
+2021-01-23 22:58:53,143 INFO L.class [main] Финиш
+2021-01-24 17:19:26,013 INFO L.class [main] Старт
+2021-01-24 17:19:26,724 INFO L.class [main] Финиш
+2021-01-24 17:25:26,103 INFO L.class [main] Открыта страница Otus.ru
+2021-01-24 18:25:47,072 INFO L.class [main] Открыта страница Otus.ru
+2021-01-24 18:27:02,298 INFO L.class [main] Открыта страница Otus.ru
+2021-01-28 14:56:25,485 INFO L.class [main] Открыта страница https://ng-bootstrap.github.io/#/components/alert/examples
+2021-01-28 14:56:25,530 INFO L.class [main] Кнопка найдена
+2021-01-28 15:39:40,418 INFO L.class [main] Открыта страница https://ng-bootstrap.github.io/#/components/alert/examples
+2021-01-28 15:39:40,462 INFO L.class [main] Кнопка найдена
+2021-01-28 15:42:19,101 INFO L.class [main] Открыта страница https://ng-bootstrap.github.io/#/components/alert/examples
+2021-01-28 15:42:19,142 INFO L.class [main] Кнопка найдена
+2021-01-28 15:42:19,414 INFO L.class [main] Thu Jan 28 2021 15:42:19 GMT+0200 (Восточная Европа, стандартное время) - Message successfully changed.
+×
+2021-01-28 15:42:19,415 INFO L.class [main] Начало ожидания
+2021-01-28 15:42:20,915 INFO L.class [main] Конец ожидания
+2021-01-28 15:42:21,008 INFO L.class [main] Thu Jan 28 2021 15:42:20 GMT+0200 (Восточная Европа, стандартное время) - Message successfully changed.
+×
+2021-01-28 15:52:43,359 INFO L.class [main] Открыта страница https://ng-bootstrap.github.io/#/components/alert/examples
+2021-01-28 15:52:43,409 INFO L.class [main] Кнопка найдена
+2021-01-28 15:52:43,729 INFO L.class [main] Alert text Thu Jan 28 2021 15:52:43 GMT+0200 (Восточная Европа, стандартное время) - Message successfully changed.
+×
+2021-01-28 15:52:43,730 INFO L.class [main] Начало ожидания
+2021-01-28 15:52:45,231 INFO L.class [main] Конец ожидания
+2021-01-28 15:52:45,343 INFO L.class [main] Alert text Thu Jan 28 2021 15:52:45 GMT+0200 (Восточная Европа, стандартное время) - Message successfully changed.
+×
+2021-01-29 15:10:31,247 INFO H.class [main] Открыта страница: https://market.yandex.ru
+2021-01-29 15:12:17,827 INFO H.class [main] Открыта страница: https://market.yandex.ru 
+2021-01-31 07:48:03,446 INFO H.class [main] Открыта страница: https://www.220-volt.ru/ 
+2021-02-01 17:21:45,272 INFO H.class [main] Перфоратор MAKITA HR2470 Перфоратор ЗУБР П-22-650
+2021-02-01 17:54:32,437 INFO H.class [main] Перфоратор MAKITA HR2470 Перфоратор ЗУБР П-22-650
+2021-02-01 18:17:53,088 INFO H.class [main] Перфоратор MAKITA HR2470 Перфоратор ЗУБР П-22-650
+2021-02-02 11:54:11,748 INFO H.class [main] Перфоратор MAKITA M8700 Перфоратор ЗУБР ЗП-18-470
+2021-02-03 15:42:36,613 INFO H.class [main] Перфоратор ЗУБР ЗП-18-470
+2021-02-03 16:49:12,903 INFO H.class [main] Перфоратор ЗУБР ЗП-18-470
+2021-02-03 16:50:39,753 INFO H.class [main] Перфоратор ЗУБР ЗП-18-470
+2021-02-03 16:51:45,648 INFO H.class [main] Перфоратор ЗУБР ЗП-18-470
+2021-02-03 16:51:45,660 INFO H.class [main] Перфоратор ЗУБР ЗП-18-470
+2021-02-03 16:55:48,119 INFO H.class [main] Перфоратор ЗУБР ЗП-18-470
+2021-02-03 17:02:09,225 INFO H.class [main] Перфоратор ЗУБР ЗП-18-470
+2021-02-03 17:06:58,751 INFO H.class [main] Перфоратор ЗУБР ЗП-18-470
+2021-02-03 17:23:30,906 INFO H.class [main] Перфоратор ЗУБР ЗП-18-470
+2021-02-03 18:09:02,965 INFO H.class [main] No pop up
+2021-02-03 18:12:33,473 INFO H.class [main] No pop up
+2021-02-03 18:12:38,359 INFO H.class [main] Перфоратор MAKITA M8700
+2021-02-03 18:33:36,332 INFO H.class [main] No Fortuna wheel
+2021-02-04 08:44:15,860 INFO H.class [main] No pop up
+2021-02-04 08:44:22,738 INFO H.class [main] No Fortuna wheel
+2021-02-04 08:48:21,623 INFO H.class [main] No pop up
+2021-02-04 09:09:07,750 INFO H.class [main] No pop up fl-201336
+2021-02-04 09:09:18,607 INFO H.class [main] No pop up
+2021-02-04 09:12:22,987 INFO H.class [main] No pop up fl-201336
+2021-02-04 09:12:35,593 INFO H.class [main] No pop up fl-213510
+2021-02-04 09:17:20,757 INFO H.class [main] No pop up fl-201336
+2021-02-04 09:17:30,685 INFO H.class [main] No pop up fl-213510
+2021-02-04 09:20:07,725 INFO H.class [main] No pop up fl-201336
+2021-02-04 09:20:19,000 INFO H.class [main] No pop up fl-213510
+2021-02-04 10:08:18,120 INFO H.class [main] No pop upfl-201336
+2021-02-04 10:08:29,008 INFO H.class [main] No pop upfl-213510
+2021-02-04 10:22:00,924 INFO H.class [main] No pop upfl-201336
+2021-02-04 10:22:13,184 INFO H.class [main] No pop upfl-213510
+2021-02-04 10:31:10,552 INFO H.class [main] No pop upfl-201336
+2021-02-04 10:31:21,967 INFO H.class [main] No pop upfl-213510
+2021-02-04 10:31:25,403 INFO H.class [main] No pop upfl-418357
+2021-02-04 10:32:22,009 INFO H.class [main] No pop upfl-201336
+2021-02-04 10:32:33,332 INFO H.class [main] No pop upfl-213510
+2021-02-04 10:32:36,732 INFO H.class [main] No pop upfl-418357
+2021-02-04 10:34:46,847 INFO H.class [main] No pop upfl-201336
+2021-02-04 10:34:58,272 INFO H.class [main] No pop upfl-213510
+2021-02-04 10:35:01,774 INFO H.class [main] No pop upfl-418357
+2021-02-04 10:37:16,999 INFO H.class [main] No pop upfl-201336
+2021-02-04 10:37:28,224 INFO H.class [main] No pop upfl-213510
+2021-02-04 10:37:31,277 INFO H.class [main] No pop upfl-436315
+2021-02-04 10:37:34,425 INFO H.class [main] No pop upfl-418357
+2021-02-04 10:43:06,003 INFO H.class [main] No pop upfl-201336
+2021-02-04 10:43:17,318 INFO H.class [main] No pop upfl-213510
+2021-02-04 10:43:20,818 INFO H.class [main] No pop upfl-436315
+2021-02-04 10:43:23,988 INFO H.class [main] No pop upfl-418357
+2021-02-04 10:55:26,553 INFO H.class [main] No pop upfl-201336
+2021-02-04 10:55:38,670 INFO H.class [main] No pop upfl-213510
+2021-02-04 10:55:41,928 INFO H.class [main] No pop upfl-436315
+2021-02-04 10:55:45,117 INFO H.class [main] No pop upfl-418357
+2021-02-04 10:57:24,966 INFO H.class [main] No pop upfl-201336
+2021-02-04 10:57:36,216 INFO H.class [main] No pop upfl-213510
+2021-02-04 10:57:39,310 INFO H.class [main] No pop upfl-436315
+2021-02-04 10:57:42,578 INFO H.class [main] No pop upfl-418357
+2021-02-04 10:57:45,794 INFO H.class [main] No pop upfl-449009
+2021-02-04 11:07:56,109 INFO H.class [main] No pop upfl-201336
+2021-02-04 11:08:06,265 INFO H.class [main] No pop upfl-213510
+2021-02-04 11:08:09,292 INFO H.class [main] No pop upfl-436315
+2021-02-04 11:08:12,454 INFO H.class [main] No pop upfl-418357
+2021-02-04 11:08:15,920 INFO H.class [main] No pop upfl-449009
+2021-02-04 11:10:31,545 INFO H.class [main] No pop upfl-201336
+2021-02-04 11:10:41,883 INFO H.class [main] No pop upfl-213510
+2021-02-04 11:10:45,173 INFO H.class [main] No pop upfl-436315
+2021-02-04 11:10:48,371 INFO H.class [main] No pop upfl-418357
+2021-02-04 11:10:51,922 INFO H.class [main] No pop upfl-450178
+2021-02-04 11:12:21,789 INFO H.class [main] No pop upfl-201336
+2021-02-04 11:12:31,738 INFO H.class [main] No pop upfl-213510
+2021-02-04 11:12:34,799 INFO H.class [main] No pop upfl-436315
+2021-02-04 11:12:38,031 INFO H.class [main] No pop upfl-418357
+2021-02-04 11:12:42,924 INFO H.class [main] No pop upfl-450178
+2021-02-04 11:42:26,624 INFO H.class [main] No pop upfl-436315
+2021-02-04 11:42:30,086 INFO H.class [main] No pop upfl-449009
+2021-02-04 11:42:33,142 INFO H.class [main] No pop upfl-450178
+2021-02-04 11:42:36,263 INFO H.class [main] No pop upfl-296615
+2021-02-04 11:50:56,819 INFO H.class [main] No pop up fl-436315
+2021-02-04 11:51:00,163 INFO H.class [main] No pop up fl-449009
+2021-02-04 11:51:03,480 INFO H.class [main] No pop up fl-450178
+2021-02-04 11:51:06,599 INFO H.class [main] No pop up fl-296615
+2021-02-04 12:03:46,508 INFO H.class [main] No pop up 991647294
+2021-02-04 12:03:49,591 INFO H.class [main] No pop up 431261949
+2021-02-04 12:03:52,638 INFO H.class [main] No pop up 736953042
+2021-02-04 12:03:56,225 INFO H.class [main] No pop up fl-436315
+2021-02-04 12:03:59,546 INFO H.class [main] No pop up fl-449009
+2021-02-04 12:04:02,596 INFO H.class [main] No pop up fl-450178
+2021-02-04 12:04:05,721 INFO H.class [main] No pop up fl-296615
+2021-02-04 12:56:01,116 INFO H.class [main] No pop up 991647294
+2021-02-04 12:56:04,196 INFO H.class [main] No pop up 431261949
+2021-02-04 12:56:07,246 INFO H.class [main] No pop up 736953042
+2021-02-04 12:56:10,521 INFO H.class [main] No pop up fl-436315
+2021-02-04 12:56:14,018 INFO H.class [main] No pop up fl-449009
+2021-02-04 12:56:17,049 INFO H.class [main] No pop up fl-450178
+2021-02-04 12:56:20,145 INFO H.class [main] No pop up fl-296615
+2021-02-04 13:00:22,415 INFO H.class [main] No pop up 991647294
+2021-02-04 13:00:25,648 INFO H.class [main] No pop up 431261949
+2021-02-04 13:00:28,649 INFO H.class [main] No pop up 736953042
+2021-02-04 13:00:32,008 INFO H.class [main] No pop up fl-441259
+2021-02-04 13:00:35,165 INFO H.class [main] No pop up fl-436315
+2021-02-04 13:00:38,426 INFO H.class [main] No pop up fl-449009
+2021-02-04 13:00:41,517 INFO H.class [main] No pop up fl-450178
+2021-02-04 13:00:44,610 INFO H.class [main] No pop up fl-296615
+2021-02-04 13:04:14,096 INFO H.class [main] No pop up 991647294
+2021-02-04 13:04:17,162 INFO H.class [main] No pop up 431261949
+2021-02-04 13:04:20,358 INFO H.class [main] No pop up 736953042
+2021-02-04 13:04:23,604 INFO H.class [main] No pop up fl-441259
+2021-02-04 13:04:26,798 INFO H.class [main] No pop up fl-436315
+2021-02-04 13:04:30,072 INFO H.class [main] No pop up fl-449009
+2021-02-04 13:04:33,151 INFO H.class [main] No pop up fl-450178
+2021-02-04 13:04:36,427 INFO H.class [main] No pop up fl-296615
+2021-02-04 13:08:07,491 INFO H.class [main] No pop up 991647294
+2021-02-04 13:08:10,548 INFO H.class [main] No pop up 431261949
+2021-02-04 13:08:13,749 INFO H.class [main] No pop up 736953042
+2021-02-04 13:08:16,984 INFO H.class [main] No pop up fl-441259
+2021-02-04 13:08:20,195 INFO H.class [main] No pop up fl-436315
+2021-02-04 13:08:23,467 INFO H.class [main] No pop up fl-449009
+2021-02-04 13:08:26,515 INFO H.class [main] No pop up fl-450178
+2021-02-04 13:08:29,792 INFO H.class [main] No pop up fl-296615
+2021-02-04 13:10:27,739 INFO H.class [main] No pop up 991647294
+2021-02-04 13:10:30,912 INFO H.class [main] No pop up 431261949
+2021-02-04 13:10:34,020 INFO H.class [main] No pop up 736953042
+2021-02-04 13:10:37,445 INFO H.class [main] No pop up fl-441259
+2021-02-04 13:10:40,618 INFO H.class [main] No pop up fl-436315
+2021-02-04 13:10:43,920 INFO H.class [main] No pop up fl-449009
+2021-02-04 13:10:46,986 INFO H.class [main] No pop up fl-450178
+2021-02-04 13:10:50,081 INFO H.class [main] No pop up fl-296615
+2021-02-04 13:17:24,336 INFO H.class [main] No pop up 991647294
+2021-02-04 13:17:27,660 INFO H.class [main] No pop up 431261949
+2021-02-04 13:17:30,706 INFO H.class [main] No pop up 736953042
+2021-02-04 13:17:33,896 INFO H.class [main] No pop up fl-441259
+2021-02-04 13:17:37,080 INFO H.class [main] No pop up fl-436315
+2021-02-04 13:17:40,525 INFO H.class [main] No pop up fl-449009
+2021-02-04 13:17:43,571 INFO H.class [main] No pop up fl-450178
+2021-02-04 13:17:46,646 INFO H.class [main] No pop up fl-296615
+2021-02-04 13:42:29,706 INFO H.class [main] No pop up 991647294
+2021-02-04 13:42:33,348 INFO H.class [main] No pop up 431261949
+2021-02-04 13:42:36,369 INFO H.class [main] No pop up 736953042
+2021-02-04 13:42:39,564 INFO H.class [main] No pop up fl-441259
+2021-02-04 13:42:42,960 INFO H.class [main] No pop up fl-436315
+2021-02-04 13:42:46,278 INFO H.class [main] No pop up fl-449009
+2021-02-04 13:42:49,321 INFO H.class [main] No pop up fl-450178
+2021-02-04 13:42:52,378 INFO H.class [main] No pop up fl-296615
+2021-02-04 13:44:08,890 INFO H.class [main] No pop up 991647294
+2021-02-04 13:44:11,954 INFO H.class [main] No pop up 431261949
+2021-02-04 13:44:14,986 INFO H.class [main] No pop up 736953042
+2021-02-04 13:44:18,394 INFO H.class [main] No pop up fl-441259
+2021-02-04 13:44:21,637 INFO H.class [main] No pop up fl-436315
+2021-02-04 13:44:24,917 INFO H.class [main] No pop up fl-449009
+2021-02-04 13:44:27,972 INFO H.class [main] No pop up fl-450178
+2021-02-04 13:44:31,260 INFO H.class [main] No pop up fl-296615
+2021-02-04 13:45:43,551 INFO H.class [main] No pop up 991647294
+2021-02-04 13:45:46,958 INFO H.class [main] No pop up 431261949
+2021-02-04 13:45:49,979 INFO H.class [main] No pop up 736953042
+2021-02-04 13:45:53,033 INFO H.class [main] No pop up fl-357138
+2021-02-04 13:45:56,079 INFO H.class [main] No pop up fl-441315
+2021-02-04 13:45:59,128 INFO H.class [main] No pop up fl-441259
+2021-02-04 13:46:02,281 INFO H.class [main] No pop up fl-213510
+2021-02-04 13:46:05,329 INFO H.class [main] No pop up fl-436315
+2021-02-04 13:46:08,367 INFO H.class [main] No pop up fl-357138
+2021-02-04 13:46:11,417 INFO H.class [main] No pop up fl-410344
+2021-02-04 13:46:14,451 INFO H.class [main] No pop up fl-418357
+2021-02-04 13:46:17,499 INFO H.class [main] No pop up fl-441315
+2021-02-04 13:46:20,567 INFO H.class [main] No pop up fl-449021
+2021-02-04 13:46:23,676 INFO H.class [main] No pop up fl-449009
+2021-02-04 13:46:26,718 INFO H.class [main] No pop up fl-450178
+2021-02-04 13:46:29,795 INFO H.class [main] No pop up fl-201336
+2021-02-04 13:46:32,846 INFO H.class [main] No pop up fl-296615
+2021-02-04 13:48:41,839 INFO H.class [main] No pop up 991647294
+2021-02-04 13:48:45,281 INFO H.class [main] No pop up 431261949
+2021-02-04 13:48:48,328 INFO H.class [main] No pop up 736953042
+2021-02-04 13:48:51,783 INFO H.class [main] No pop up fl-441259
+2021-02-04 13:48:54,998 INFO H.class [main] No pop up fl-436315
+2021-02-04 13:48:58,302 INFO H.class [main] No pop up fl-449009
+2021-02-04 13:49:01,317 INFO H.class [main] No pop up fl-450178
+2021-02-04 13:49:04,604 INFO H.class [main] No pop up fl-296615
+2021-02-04 13:53:29,412 INFO H.class [main] No pop up 991647294
+2021-02-04 13:53:32,442 INFO H.class [main] No pop up 431261949
+2021-02-04 13:53:35,496 INFO H.class [main] No pop up 736953042
+2021-02-04 13:53:54,259 INFO H.class [main] No pop up 991647294
+2021-02-04 13:53:57,336 INFO H.class [main] No pop up 431261949
+2021-02-04 13:54:00,394 INFO H.class [main] No pop up 736953042
+2021-02-04 13:54:03,576 INFO H.class [main] No pop up fl-441259
+2021-02-04 13:54:06,948 INFO H.class [main] No pop up fl-436315
+2021-02-04 13:54:10,329 INFO H.class [main] No pop up fl-449009
+2021-02-04 13:54:13,390 INFO H.class [main] No pop up fl-450178
+2021-02-04 13:54:16,494 INFO H.class [main] No pop up fl-296615
+2021-02-04 13:55:43,737 INFO H.class [main] No pop up 991647294
+2021-02-04 13:55:46,865 INFO H.class [main] No pop up 431261949
+2021-02-04 13:55:49,891 INFO H.class [main] No pop up 736953042
+2021-02-04 13:55:53,105 INFO H.class [main] No pop up fl-441259
+2021-02-04 13:55:56,286 INFO H.class [main] No pop up fl-436315
+2021-02-04 13:55:59,741 INFO H.class [main] No pop up fl-449009
+2021-02-04 13:56:02,779 INFO H.class [main] No pop up fl-450178
+2021-02-04 13:56:05,894 INFO H.class [main] No pop up fl-296615
+2021-02-04 13:59:27,318 INFO H.class [main] No pop up 991647294
+2021-02-04 13:59:30,750 INFO H.class [main] No pop up 431261949
+2021-02-04 13:59:33,969 INFO H.class [main] No pop up 736953042
+2021-02-04 13:59:37,115 INFO H.class [main] No pop up fl-441259
+2021-02-04 13:59:40,274 INFO H.class [main] No pop up fl-436315
+2021-02-04 13:59:43,611 INFO H.class [main] No pop up fl-449009
+2021-02-04 13:59:46,628 INFO H.class [main] No pop up fl-450178
+2021-02-04 13:59:49,722 INFO H.class [main] No pop up fl-296615
+2021-02-04 14:14:29,687 INFO H.class [main] No pop up 991647294
+2021-02-04 14:14:32,843 INFO H.class [main] No pop up 431261949
+2021-02-04 14:14:35,876 INFO H.class [main] No pop up 736953042
+2021-02-04 14:14:39,074 INFO H.class [main] No pop up fl-441259
+2021-02-04 14:14:42,267 INFO H.class [main] No pop up fl-436315
+2021-02-04 14:14:45,759 INFO H.class [main] No pop up fl-449009
+2021-02-04 14:14:48,838 INFO H.class [main] No pop up fl-450178
+2021-02-04 14:14:51,911 INFO H.class [main] No pop up fl-296615
+2021-02-04 14:18:59,287 INFO H.class [main] No pop up 991647294
+2021-02-04 14:19:02,397 INFO H.class [main] No pop up 431261949
+2021-02-04 14:19:05,464 INFO H.class [main] No pop up 736953042
+2021-02-04 14:19:08,907 INFO H.class [main] No pop up fl-441259
+2021-02-04 14:19:12,098 INFO H.class [main] No pop up fl-436315
+2021-02-04 14:19:15,387 INFO H.class [main] No pop up fl-449009
+2021-02-04 14:19:18,458 INFO H.class [main] No pop up fl-450178
+2021-02-04 14:19:21,590 INFO H.class [main] No pop up fl-296615
+2021-02-04 14:27:47,236 INFO H.class [main] No pop up 991647294
+2021-02-04 14:27:50,770 INFO H.class [main] No pop up 431261949
+2021-02-04 14:27:53,838 INFO H.class [main] No pop up 736953042
+2021-02-04 14:27:57,104 INFO H.class [main] No pop up fl-441259
+2021-02-04 14:28:00,334 INFO H.class [main] No pop up fl-436315
+2021-02-04 14:28:03,619 INFO H.class [main] No pop up fl-449009
+2021-02-04 14:28:06,635 INFO H.class [main] No pop up fl-450178
+2021-02-04 14:28:09,762 INFO H.class [main] No pop up fl-296615
+2021-02-04 14:29:47,072 INFO H.class [main] No pop up 991647294
+2021-02-04 14:29:50,480 INFO H.class [main] No pop up 431261949
+2021-02-04 14:29:53,502 INFO H.class [main] No pop up 736953042
+2021-02-04 14:29:56,563 INFO H.class [main] No pop up fl-357138
+2021-02-04 14:29:59,593 INFO H.class [main] No pop up fl-441315
+2021-02-04 14:30:02,617 INFO H.class [main] No pop up fl-441259
+2021-02-04 14:30:05,747 INFO H.class [main] No pop up fl-213510
+2021-02-04 14:30:08,797 INFO H.class [main] No pop up fl-436315
+2021-02-04 14:30:11,860 INFO H.class [main] No pop up fl-357138
+2021-02-04 14:30:14,900 INFO H.class [main] No pop up fl-410344
+2021-02-04 14:30:17,947 INFO H.class [main] No pop up fl-418357
+2021-02-04 14:30:20,966 INFO H.class [main] No pop up fl-441315
+2021-02-04 14:30:24,025 INFO H.class [main] No pop up fl-449021
+2021-02-04 14:30:27,060 INFO H.class [main] No pop up fl-449009
+2021-02-04 14:30:30,125 INFO H.class [main] No pop up fl-450178
+2021-02-04 14:30:33,163 INFO H.class [main] No pop up fl-201336
+2021-02-04 14:30:36,203 INFO H.class [main] No pop up fl-296615
+2021-02-04 14:31:58,398 INFO H.class [main] No pop up 991647294
+2021-02-04 14:32:01,866 INFO H.class [main] No pop up 431261949
+2021-02-04 14:32:04,900 INFO H.class [main] No pop up 736953042
+2021-02-04 14:32:07,920 INFO H.class [main] No pop up fl-357138
+2021-02-04 14:32:10,978 INFO H.class [main] No pop up fl-441315
+2021-02-04 14:32:14,012 INFO H.class [main] No pop up fl-441259
+2021-02-04 14:32:17,161 INFO H.class [main] No pop up fl-213510
+2021-02-04 14:32:20,186 INFO H.class [main] No pop up fl-436315
+2021-02-04 14:32:23,226 INFO H.class [main] No pop up fl-357138
+2021-02-04 14:32:26,260 INFO H.class [main] No pop up fl-410344
+2021-02-04 14:32:29,290 INFO H.class [main] No pop up fl-418357
+2021-02-04 14:32:32,387 INFO H.class [main] No pop up fl-441315
+2021-02-04 14:32:35,419 INFO H.class [main] No pop up fl-449021
+2021-02-04 14:32:38,423 INFO H.class [main] No pop up fl-449009
+2021-02-04 14:32:41,498 INFO H.class [main] No pop up fl-450178
+2021-02-04 14:32:44,524 INFO H.class [main] No pop up fl-201336
+2021-02-04 14:32:47,549 INFO H.class [main] No pop up fl-296615
+2021-02-04 14:35:06,863 INFO H.class [main] No pop up 991647294
+2021-02-04 14:35:09,983 INFO H.class [main] No pop up 431261949
+2021-02-04 14:35:13,031 INFO H.class [main] No pop up 736953042
+2021-02-04 14:35:16,095 INFO H.class [main] No pop up fl-357138
+2021-02-04 14:35:19,124 INFO H.class [main] No pop up fl-441315
+2021-02-04 14:35:22,193 INFO H.class [main] No pop up fl-441259
+2021-02-04 14:35:25,365 INFO H.class [main] No pop up fl-213510
+2021-02-04 14:35:28,432 INFO H.class [main] No pop up fl-436315
+2021-02-04 14:35:31,452 INFO H.class [main] No pop up fl-357138
+2021-02-04 14:35:34,468 INFO H.class [main] No pop up fl-410344
+2021-02-04 14:35:37,530 INFO H.class [main] No pop up fl-418357
+2021-02-04 14:35:40,597 INFO H.class [main] No pop up fl-441315
+2021-02-04 14:35:43,615 INFO H.class [main] No pop up fl-449021
+2021-02-04 14:35:46,652 INFO H.class [main] No pop up fl-449009
+2021-02-04 14:35:49,682 INFO H.class [main] No pop up fl-450178
+2021-02-04 14:35:52,777 INFO H.class [main] No pop up fl-201336
+2021-02-04 14:35:55,845 INFO H.class [main] No pop up fl-296615
+2021-02-04 16:16:39,423 INFO H.class [main] No pop up 991647294
+2021-02-04 16:16:44,443 INFO H.class [main] No pop up 431261949
+2021-02-04 16:16:49,495 INFO H.class [main] No pop up 736953042
+2021-02-04 16:16:54,739 INFO H.class [main] No pop up fl-441259
+2021-02-04 16:16:59,906 INFO H.class [main] No pop up fl-436315
+2021-02-04 16:17:05,343 INFO H.class [main] No pop up fl-449009
+2021-02-04 16:17:10,394 INFO H.class [main] No pop up fl-450178
+2021-02-04 16:17:15,508 INFO H.class [main] No pop up fl-296615
+2021-02-04 16:18:04,864 INFO H.class [main] No pop up 991647294
+2021-02-04 16:18:09,945 INFO H.class [main] No pop up 431261949
+2021-02-04 16:18:15,007 INFO H.class [main] No pop up 736953042
+2021-02-04 16:18:20,190 INFO H.class [main] No pop up fl-441259
+2021-02-04 16:18:25,601 INFO H.class [main] No pop up fl-436315
+2021-02-04 16:18:30,862 INFO H.class [main] No pop up fl-449009
+2021-02-04 16:18:35,882 INFO H.class [main] No pop up fl-450178
+2021-02-04 16:18:41,001 INFO H.class [main] No pop up fl-296615
+2021-02-04 16:19:38,941 INFO H.class [main] No pop up 991647294
+2021-02-04 16:19:43,980 INFO H.class [main] No pop up 431261949
+2021-02-04 16:19:49,015 INFO H.class [main] No pop up 736953042
+2021-02-04 16:19:54,315 INFO H.class [main] No pop up fl-441259
+2021-02-04 16:19:59,837 INFO H.class [main] No pop up fl-436315
+2021-02-04 16:20:05,170 INFO H.class [main] No pop up fl-449009
+2021-02-04 16:20:10,212 INFO H.class [main] No pop up fl-450178
+2021-02-04 16:20:15,276 INFO H.class [main] No pop up fl-296615
+2021-02-04 16:22:46,665 INFO H.class [main] No pop up 991647294
+2021-02-04 16:22:51,752 INFO H.class [main] No pop up 431261949
+2021-02-04 16:22:56,805 INFO H.class [main] No pop up 736953042
+2021-02-04 16:23:02,024 INFO H.class [main] No pop up fl-441259
+2021-02-04 16:23:07,237 INFO H.class [main] No pop up fl-436315
+2021-02-04 16:23:12,696 INFO H.class [main] No pop up fl-449009
+2021-02-04 16:23:17,736 INFO H.class [main] No pop up fl-450178
+2021-02-04 16:23:22,873 INFO H.class [main] No pop up fl-296615
+2021-02-04 16:28:07,554 INFO H.class [main] No pop up 991647294
+2021-02-04 16:28:12,746 INFO H.class [main] No pop up 431261949
+2021-02-04 16:28:17,857 INFO H.class [main] No pop up 736953042
+2021-02-04 16:28:23,079 INFO H.class [main] No pop up fl-441259
+2021-02-04 16:28:28,372 INFO H.class [main] No pop up fl-436315
+2021-02-04 16:28:33,991 INFO H.class [main] No pop up fl-449009
+2021-02-04 16:28:39,035 INFO H.class [main] No pop up fl-450178
+2021-02-04 16:28:44,141 INFO H.class [main] No pop up fl-296615

@@ -1,4 +1,3 @@
-import config.ServerConfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.logging.log4j.LogManager;
@@ -20,7 +19,7 @@ public class HomeWork2 {
     //private final Logger logger = Logger.getLogger(String.valueOf(SampleTest.class));
     private final Logger logger = LogManager.getLogger("HomeWork2.class");
     private String startPage="https://yandex.ru";
-    final ServerConfig cfg = ConfigFactory.create(ServerConfig.class);
+    //final ServerConfig cfg = ConfigFactory.create(ServerConfig.class);
     protected static WebDriver driver;
 
     @Before

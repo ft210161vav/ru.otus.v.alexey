@@ -1,4 +1,3 @@
-import config.ServerConfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.*;
@@ -12,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class SampleTest {
     //private final Logger logger = Logger.getLogger(String.valueOf(SampleTest.class));
     private final Logger logger = LogManager.getLogger("SampleTest.class");
-    final ServerConfig cfg = ConfigFactory.create(ServerConfig.class);
+   // final ServerConfig cfg = ConfigFactory.create(ServerConfig.class);
     protected static WebDriver driver;
 
     //   public static void initDriver() {
@@ -25,18 +24,10 @@ public class SampleTest {
         logger.info("Драйвер поднят");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
-public void auth()
-{/*
-    String login="fawodo3192@chikd73.com";
-    String password ="Qazwsx123";
-    String locator="https://otus.ru/learning/";
-    driver.findElement(By.name("email"));
-    driver.findElement(By.name("password"));
-    */
-}
+
     @Test
     public void openPage() {
-        driver.get(cfg.url());
+      //  driver.get(cfg.url());
         logger.info("Открыта страница Otus.ru");
         // String title= driver.findElement(By.tagName("title")).getText();
         String title=driver.getTitle();
@@ -45,7 +36,7 @@ public void auth()
    @Test
         public void Cookie()
         {
-            driver.get(cfg.url());
+          //  driver.get(cfg.url());
             driver.manage().addCookie(new Cookie( "Otus1",  "Value1"));
             driver.manage().addCookie(new Cookie( "Otus2",  "Value2"));
             Cookie cookie=new Cookie("Otus3",  "Value3");
