@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.ILoggerFactory;
 
 import java.io.File;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /*
@@ -27,9 +28,11 @@ import java.util.concurrent.TimeUnit;
  */
 
 public class HomeWork3_2 {
+    protected static WebDriver driver;
     private final Logger logger = LogManager.getLogger("HomeWork3_2.class");
     final String page = "https://www.220-volt.ru/";
-    protected static WebDriver driver;
+    final String articul_before="compare-618336"; //Артикул первого перфоратора Макита для добавления в сравнение
+    final String articul_after="618336_compare"; //Артикул первого перфоратора Макита на страницы сравнения
 
     @Before
     public void setUp() {
@@ -43,41 +46,47 @@ public class HomeWork3_2 {
         driver.get(page);
 
         // Убираем iframes
-/*
-       try {
-           remove_iframes();
-       }
-       catch(Exception e)
-        {
-            logger.info("No pop ups");
-        }
-*/
+
+
+        remove_iframe("easyXDM_flockProvider_provider");
+
 
         // ********************* Электроэнструменты -> Перфораторы
 
         link_item();
 
-          //*******************************      - Выбрать марки Makita и Зубр
+        //*******************************      - Выбрать марки Makita и Зубр
 
         driver.findElement((By.cssSelector("input[title='MAKITA']"))).click();
         driver.findElement((By.cssSelector("input[title='ЗУБР']"))).click();
 
-     //  ******************************** - Отсортировать по цене (min->max)
+        //  ******************************** - Отсортировать по цене (min->max)
 
-      sort_by_price_ascending();
+        sort_by_price_ascending();
 
         //***********************- Добавить в сравнение первый перфоратор "Зубр" и первый перфоратор "Makita"
 
+// Убираем iframes
 
-        String textZubr = add_Zubr_to_compare();
+        remove_iframe("easyXDM_flockProvider_provider");
 
-        String textMakita=add_Makita_to_compare();
+        String textZubr = add_to_compare("ЗУБР");
+
+        driver.get("https://www.220-volt.ru/catalog/perforatory/?f=br__16,473#h1");
+
+       String textMakita = add_Makita_to_compare();
 
         //*****************- Перейти на страницу сравнения. Убедиться, что в сравнении корректные перфораторы.
 
         driver.get("https://www.220-volt.ru/compare");
-        Assert.assertTrue(driver.findElement(By.cssSelector("*[data-product-title='" + textZubr + "']")).isDisplayed());
-        Assert.assertTrue(driver.findElement(By.cssSelector("*[data-product-title='" + textMakita + "']")).isDisplayed());
+
+     Assert.assertTrue(driver.findElement(By.cssSelector("[data-product-title*='" + textZubr + "']")).isDisplayed());
+
+     JavascriptExecutor js2 = (JavascriptExecutor) driver;
+            js2.executeScript("document.getElementById('"+articul_after+"');");
+
+     Assert.assertEquals(articul_before.substring(9),articul_after.substring(1,6)); //Артикулы Макита до добавления к сравнению
+        // и после совпадают
 
 
     }
@@ -95,9 +104,9 @@ public class HomeWork3_2 {
         try {
             if (driver.findElement(By.id(IframeId)).isDisplayed()) {
                 JavascriptExecutor js2 = (JavascriptExecutor) driver;
-                //js2.executeScript("var ifr1 = document.getElementById('"+IframeId+
-                //     "');ifr1.parentNode.removeChild(ifr1);");
-                js2.executeScript("var node = document.querySelector('#" + IframeId + "');node.parentNode.removeChild(node);");
+
+                js2.executeScript("var node = document.querySelector('#" + IframeId + "');" +
+                        "node.parentNode.removeChild(node);");
                 driver.switchTo().defaultContent();
             }
         } catch (Exception e) {
@@ -114,8 +123,6 @@ public class HomeWork3_2 {
         action.moveToElement(link).perform();
 
         WebElement item = driver.findElement((By.cssSelector("a[title='Перфораторы']")));
-
-        action.moveToElement(item).perform();
 
         new WebDriverWait(driver, 10)
                 .until(ExpectedConditions.elementToBeClickable(item));  //ждём кликабельности нужной ссылки
@@ -134,72 +141,94 @@ public class HomeWork3_2 {
                 .until(ExpectedConditions.elementToBeClickable(aprice));  //ждём кликабельности нужной ссылки
         aprice.click();
 
-        WebElement filtered = driver.findElement(By.xpath("//a[@href='#']"));
+        WebElement filtered = driver.findElement(By.cssSelector("a[href='#']"));
         filtered.click();
-    }
-
-    public String add_Zubr_to_compare() {
-        WebElement firstZubr = driver.findElement(By.cssSelector
-                ("a[data-product-vendor='ЗУБР'][data-product-category='Перфораторы'])[0];"));
-        Actions action = new Actions(driver);
-        action.moveToElement(firstZubr).perform();
-        new WebDriverWait(driver, 5000)
-                .until(ExpectedConditions.elementToBeClickable(firstZubr));
-        String textZubr = firstZubr.getText();
-
-        WebElement compare1 = driver.findElement(By.id("compare-332398"));
-
-       // action.moveToElement(compare1).perform();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(compare1)).click();
-        return textZubr;
     }
 
     public String add_Makita_to_compare() {
         WebElement firstMakita = driver.findElement(By.cssSelector
-                ("a[data-product-vendor='MAKITA'][data-product-category='Перфораторы'])[0];"));
+                ("a[data-product-vendor='MAKITA'][data-product-category='Перфораторы']"));
         Actions action = new Actions(driver);
         action.moveToElement(firstMakita).perform();
 
         new WebDriverWait(driver, 5000)
                 .until(ExpectedConditions.elementToBeClickable(firstMakita));
-        String textMakita = firstMakita.getText();
-        WebElement compare2 = driver.findElement(By.id("compare-618336"));
-        action.moveToElement(compare2).perform();
+        String textMakita = firstMakita.getAttribute("data-product-title");
+
+        JavascriptExecutor js2 = (JavascriptExecutor) driver;
+        js2.executeScript("document.getElementById('"+articul_before+"');");
+        WebElement compare1 = driver.findElement(By.cssSelector("[for='compare-691618']>[title='Добавить к сравнению']"));
         new WebDriverWait(driver, 5000)
-                .until(ExpectedConditions.elementToBeClickable(compare2)).click();
-        // logger.info(String.format("%s %s", textMakita, textZubr));
+                .until(ExpectedConditions.elementToBeClickable(compare1)).click();
+
         return textMakita;
     }
 
-    public void remove_iframes() throws Exception
-    {
-        try_catch("991647294");
-        try_catch("431261949");
-        try_catch("736953042");
-        try_catch("fl-357138");
-        try_catch("fl-441315");
-        try_catch("fl-441259");
-        try_catch("easyXDM_flockProvider_provider");
-        try_catch("fl-213510");
-        try_catch("fl-436315");
-        try_catch("fl-357138");
-        try_catch("fl-410344");
-        try_catch("fl-418357");
-        try_catch("fl-441315");
-        try_catch("fl-449021");
-        try_catch("fl-449009");
-        try_catch("fl-450178");
-        try_catch("fl-201336");
-        try_catch("fl-296615");
+    public String add_to_compare(String Brand_name) {
+        WebElement first_good = driver.findElement(By.cssSelector
+                ("a[data-product-vendor='"+Brand_name+"'][data-product-category='Перфораторы']"));
+        Actions action = new Actions(driver);
+        action.moveToElement(first_good).perform();
+        new WebDriverWait(driver, 5000)
+                .until(ExpectedConditions.elementToBeClickable(first_good));
+        String text_good = first_good.getAttribute("data-product-title");
+        WebElement compare = driver.findElement(By.cssSelector("i[title='Добавить к сравнению'"));
+        action.moveToElement(compare).perform();
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(compare)).click();
+
+        return text_good;
     }
 
-    public void makeScreenshot() throws Exception{
+    public void makeScreenshot() throws Exception {
         TakesScreenshot screenshotShot = ((TakesScreenshot) driver);
         File SrcFile = screenshotShot.getScreenshotAs(OutputType.FILE);
         File DestFile = new File("C:/mdistr/1.png");
         Files.copy(SrcFile, DestFile);
     }
 
+    public void RemoveIframes() {
+        String Iframe;
+        String IframeIds[] = {
+                "991647294",
+                "431261949",
+                "736953042",
+                "fl-357138",
+                "fl-441315",
+                "fl-441259",
+                "easyXDM_flockProvider_provider",
+                "fl-213510",
+                "fl-436315",
+                "fl-357138",
+                "fl-410344",
+                "fl-418357",
+                "fl-441315",
+                "fl-449021",
+                "fl-449009",
+                "fl-450178",
+                "fl-201336",
+                "fl-296615"
+        };
+        for (int i = 0; i < IframeIds.length; i++) {
+            Iframe = (IframeIds[i]);
+            logger.info(Iframe);
+            JavascriptExecutor js2 = (JavascriptExecutor) driver;
+            if (driver.findElement(By.id(Iframe)).isEnabled()) {
+                js2.executeScript("var node = document.getElementById('" + Iframe + "');" +
+                        "node.parentNode.removeChild(node);");
+            }
+        }
+    }
+
+    public void remove_iframe(String Iframe) {
+        JavascriptExecutor js2 = (JavascriptExecutor) driver;
+        if (driver.findElement(By.id(Iframe)).isEnabled()) {
+            js2.executeScript("var node = document.getElementById('" + Iframe + "');" +
+                    "node.parentNode.removeChild(node);");
+        }
+    }
+
 }
+
+
 
 
