@@ -1,30 +1,24 @@
 package HomeVork4PageObjectTest;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebElement;
 
-import java.util.concurrent.TimeUnit;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
 
-public class BaseClass {
-    protected static WebDriver driver;
-    private final Logger logger = LogManager.getLogger("BaseClass.class");
+public class BasePage extends BaseClass{
 
-    @Before
-    public void setUp() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    public BasePage(WebDriver driver){
     }
-    @After
-    public void setDown() {
-        if (driver != null) {
-            driver.quit();
-        }
+    public void openPage(String url)
+    {
+        driver.get(url);
     }
-}
+    public WebElement $(By locator){
+        return driver.findElement(locator);
+    }
+
+    }
+

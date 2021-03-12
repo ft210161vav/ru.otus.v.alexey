@@ -8,13 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="owner" />
         <module name="junit" />
-        <module name="model" />
-        <module name="test-testng" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="model" target="1.8" />
       <module name="ru.otus" target="1.8" />
       <module name="test-junit" target="15" />
+      <module name="test-testng" target="15" />
     </bytecodeTargetLevel>
   </component>
 </project>

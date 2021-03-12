@@ -1,55 +1,75 @@
 package HomeVork4PageObjectTest;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.After;
-import org.junit.Before;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.concurrent.TimeUnit;
 
-public class PersonalPage {
-    private final WebDriver driver;
+public class LoginPage extends BaseClass{
 
-    public PersonalPage(WebDriver driver) {
-        this.driver = driver;
+    @FindBy(xpath ="/html/body/div[3]/div/div/div/div[3]/div[2]/div[2]/form/div[2]/input")
+    private WebElement emailInput;
+
+    By passwordLocator = By.name("password");
+    @FindBy(name ="password")
+    private WebElement passwordInput;
+
+
+    @FindBy(xpath ="//div[2]/form/div[4]/button")
+    private WebElement loginButtonLocator;
+
+    @FindBy(xpath ="//div[2]/div/header[2]/div/div[3]/div[1]/button")
+    private WebElement loginButton;
+
+
+    public LoginPage(WebDriver driver) {
+                   PageFactory.initElements(driver,this);
+    }
+    public LoginPage openPage(String url){
+        driver.get(url);
+        return this;
     }
 
-    By firstnameLocator = By.name("fname");
-    By lastnameLocator = By.name("lname");
-    By blognameLocator=By.name("blog_name");
-    By firstnamelatinLocator = By.name("fname_latin");
-    By lastnamelatinLocator = By.name("lname_latin");
-    By dateOfBirthLocator = By.name("date_of_birth");
-    By countryLocator=By.name("country");
-    By cityLocator=By.name("city");
-    By englishLevelLocator=By.name("english_level");
-    By relocateNoLevelLocator=By.id("id_ready_to_relocate_0");
-    By relocateYesLevelLocator=By.id("id_ready_to_relocate_1");
-    By workFullLocator=By.cssSelector("[name='work_schedule'][value='full']");
-    By workflexibleLocator=By.cssSelector("[name='work_schedule'][value='flexible']");
-    By workremoteLocator=By.cssSelector("[name='work_schedule'][value='remote']");
-    By emailLocator=By.name("email");
-    By phoneLocator=By.name("phone");
-    By contact1Locator=By.name("contact-8-value");
-    By contact2Locator=By.name("contact-9-value");
-    By emailPreferableLocator=By.name("is_email_preferable");
-    By phonePreferableLocator=By.name("is_phone_preferable");
-    By contact1PreferableLocator=By.name("contact-8-preferable");
-    By contact2PreferableLocator=By.name("contact-9-preferable");
-    By button1AddLocator= By.className("lk-cv-block__action.lk-cv-block__action_md-no-spacing.js-formset-add.js-lk-cv-custom-select-add");
-    By genderLocator=By.name("gender");
-    By companyLocator=By.name("company");
-    By worklLocator=By.name("work");
-    By button2AddLocator= By.className("experience-add.js-formset-add");
-    By experienceLocator=By.name("experience-0-experience");
-    By experiencelevelLocator=By.name("experience-0-level");
-    By saveButtonLocator=By.cssSelector("[title='Сохранить и продолжить']");
+
+    public LoginPage EnterRegButton() {
+            new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(loginButton));
+           /* Actions action = new Actions(driver);
+            action.moveToElement(loginButton).perform();*/
+            JavascriptExecutor js=(JavascriptExecutor)driver;
+            js.executeScript("arguments[0].click;",loginButton);
+            loginButton.click();
+                    return this;
+       }
+
+    public LoginPage typeEmail(String email) {
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(emailInput));
+        Actions action = new Actions(driver);
+        action.moveToElement(emailInput).click().perform();
+        emailInput.sendKeys(email);
+        return this;
+    }
+        public LoginPage typePassword(String password) {
+            new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(passwordLocator));
+            Actions action = new Actions(driver);
+            action.moveToElement(passwordInput).click().perform();
+            passwordInput.sendKeys(password);
+            return this;
+        }
+
+        public PersonalPage submitLogin() {
+            Actions action = new Actions(driver);
+            action.moveToElement(loginButtonLocator).perform();
+            new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(loginButtonLocator));
+            loginButtonLocator.submit();
+            return new PersonalPage(driver);
+        }
+
+        }
 
 
-
-
-
-
-}

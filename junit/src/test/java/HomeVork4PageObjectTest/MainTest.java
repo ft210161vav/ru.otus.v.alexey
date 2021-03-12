@@ -1,30 +1,60 @@
 package HomeVork4PageObjectTest;
 
+import com.google.common.io.Files;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.openqa.selenium.WebDriver;
+import org.junit.*;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.util.concurrent.TimeUnit;
+import java.io.*;
+import java.util.Properties;
+import org.junit.Test;
 
-public class BaseClass {
-    protected static WebDriver driver;
-    private final Logger logger = LogManager.getLogger("BaseClass.class");
 
-    @Before
-    public void setUp() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+/*
+- Открыть https://otus.ru
+- Авторизоваться на сайте
+- Войти в личный кабинет
+- В разделе "О себе" заполнить все поля "Личные данные" и добавить не менее двух контактов
+- Нажать сохранить
+- Открыть https://otus.ru в "чистом браузере"
+- Авторизоваться на сайте
+- Войти в личный кабинет
+- Проверить, что в разделе "О себе" отображаются указанные ранее данные
+
+ */
+
+public class MainTest extends BaseClass {
+    FileInputStream fis;
+    Properties property = new Properties();
+    public String email;
+    public String password;
+    public String url;
+    public static LoginPage loginPage;
+    public static PersonalPage personalPage;
+
+   @Test
+    public void loginTest() {
+
+        try {
+        fis = new FileInputStream("src/main/resources/config.properties");
+        property.load(fis);
+        email = property.getProperty("email");
+        password = property.getProperty("password");
+        url = property.getProperty("url");
+    } catch (IOException e) {
+        System.err.println("ОШИБКА: Файл свойств отсуствует!");
     }
-    @After
-    public void setDown() {
-        if (driver != null) {
-            driver.quit();
-        }
+loginPage=new LoginPage(driver);
+       loginPage.openPage(url);
+      // loginPage.EnterRegButton();
+      // loginPage.typeEmail(email);
+     /*  loginPage.typePassword(password);
+       loginPage.submitLogin();
+
+personalPage=new PersonalPage(driver);
+       personalPage.PersonalDataFill();
+   */ }
     }
-}
