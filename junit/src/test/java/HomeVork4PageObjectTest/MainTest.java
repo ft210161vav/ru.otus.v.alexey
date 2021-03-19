@@ -1,7 +1,10 @@
 package HomeVork4PageObjectTest;
 
 import com.google.common.io.Files;
+import com.sun.xml.internal.ws.policy.AssertionSet;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import jdk.nashorn.internal.AssertsEnabled;
+import org.apache.hc.core5.util.Asserts;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.*;
@@ -13,19 +16,6 @@ import java.util.Properties;
 import org.junit.Test;
 
 
-/*
-- Открыть https://otus.ru
-- Авторизоваться на сайте
-- Войти в личный кабинет
-- В разделе "О себе" заполнить все поля "Личные данные" и добавить не менее двух контактов
-- Нажать сохранить
-- Открыть https://otus.ru в "чистом браузере"
-- Авторизоваться на сайте
-- Войти в личный кабинет
-- Проверить, что в разделе "О себе" отображаются указанные ранее данные
-
- */
-
 public class MainTest extends BaseClass {
     FileInputStream fis;
     Properties property = new Properties();
@@ -35,7 +25,11 @@ public class MainTest extends BaseClass {
     public static LoginPage loginPage;
     public static PersonalPage personalPage;
 
-   @Test
+    public MainTest() {
+        super(driver);
+    }
+
+    @Test
     public void loginTest() {
 
         try {
@@ -47,14 +41,64 @@ public class MainTest extends BaseClass {
     } catch (IOException e) {
         System.err.println("ОШИБКА: Файл свойств отсуствует!");
     }
-loginPage=new LoginPage(driver);
-       loginPage.openPage(url);
-      // loginPage.EnterRegButton();
-      // loginPage.typeEmail(email);
-     /*  loginPage.typePassword(password);
-       loginPage.submitLogin();
+//- Открыть https://otus.ru
 
-personalPage=new PersonalPage(driver);
-       personalPage.PersonalDataFill();
-   */ }
+     loginPage=new LoginPage();
+
+ //- Авторизоваться на сайте
+       Auth();
+
+ //       - Войти в личный кабинет
+      personalPage=new PersonalPage(driver);
+
+      /* - В разделе "О себе" заполнить все поля "Личные данные" и добавить не менее двух контактов
+         - Нажать сохранить */
+      personalPage.PersonalDataFill();
+
+      //*- Открыть https://otus.ru в "чистом браузере"
+      setDown();
+      loginPage=new LoginPage();
+
+//- Авторизоваться на сайте
+        Auth();
+
+//- Войти в личный кабинет
+      personalPage=new PersonalPage(driver);
+
+//- Проверить, что в разделе "О себе" отображаются указанные ранее данные
+
+      personalPage.FnameLatinGot=personalPage.GetData(personalPage.inputfnamelatin);
+      Assert.assertEquals(personalPage.FnameLatinGot,personalPage.FnameLatin);
+
+      personalPage.LnameLatinGot=personalPage.GetData(personalPage.inputlnamelatin);
+      Assert.assertEquals(personalPage.LnameLatinGot,personalPage.LnameLatin);
+
+      personalPage.DateOfBirthGot=personalPage.GetData(personalPage.date_of_birthInput);
+      Assert.assertEquals(personalPage.DateOfBirthGot,personalPage.DateOfBirth);
+
+      personalPage.ScrollDown("1000");
+
+      personalPage.countryGot=personalPage.GetData(personalPage.countrySet);
+      Assert.assertEquals(personalPage.countryGot,personalPage.countrySetText);
+
+      personalPage.cityGot=personalPage.GetData(personalPage.citySet);
+      Assert.assertEquals(personalPage.cityGot,personalPage.citySetText);
+
+      personalPage.EnglishLevelGot=personalPage.GetData(personalPage.EnglishLevelSet);
+      Assert.assertEquals(personalPage.EnglishLevelGot,personalPage.EnglishLevelText);
+
+      personalPage.contact0Got=personalPage.GetData(personalPage.contact0);
+      Assert.assertEquals(personalPage.contact0Got,email);
+
+      personalPage.contact1Got=personalPage.GetData(personalPage.contact1);
+      Assert.assertEquals(personalPage.contact1Got,email);
+
+    }
+    private void Auth(){
+        loginPage.openPage(url);
+        loginPage.EnterRegButton();
+        loginPage.typeEmail(email);
+        loginPage.typePassword(password);
+        loginPage.submitLogin();
+    }
     }
