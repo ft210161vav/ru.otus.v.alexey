@@ -28,13 +28,11 @@ public class BaseClass {
 
     @Before
     public  void setUp() {
-        System.setProperty("webdriver.chrome.driver","C:/ChromeDriver/chromedriver.exe");
         WebDriverManager.chromedriver().setup();
         driver= new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         }
-
 
 
         public WebElement $(By locator){

@@ -13,7 +13,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-public class PersonalPage extends BaseClass
+public class PersonalPage extends BasePage
     {
     protected String DateOfBirth,DateOfBirthGot,FnameLatin,FnameLatinGot,LnameLatin,LnameLatinGot,countryGot,cityGot;
     protected String email,url,EnglishLevelGot,contact0Got,contact1Got,countrySetText,citySetText,EnglishLevelText;
@@ -21,7 +21,6 @@ public class PersonalPage extends BaseClass
     FileInputStream fis;
     Properties property = new Properties();
     public PersonalPage(WebDriver driver) {
-        super(driver);
                 PageFactory.initElements(driver, this);
         try {
             fis = new FileInputStream("src/main/resources/config.properties");
@@ -31,6 +30,7 @@ public class PersonalPage extends BaseClass
             FnameLatin=property.getProperty("fnameLatin");
             LnameLatin=property.getProperty("lnameLatin");
             DateOfBirth = property.getProperty("DateOfBirth");
+            //BasePage basePage = openPage("https://otus.ru/lk/biography/personal");
 
         } catch (IOException e) {
             System.err.println("ОШИБКА: Файл свойств отсуствует!");
@@ -46,34 +46,25 @@ public class PersonalPage extends BaseClass
     @FindBy(id ="id_lname_latin" )
     protected WebElement inputlnamelatin;
 
-    @FindBy(xpath ="//div[2]/div/div[5]/div[3]/div[2]/div[2]/div/form/div[1]/div[3]/div[1]/div/div[1]/div[1]/div[2]/div/label/div")
+    @FindBy(css ="[data-ajax-slave=\"/lk/biography/cv/lookup/cities/by_country/\"]")
             private WebElement selectCountry;
 
    @FindBy(xpath = "//div[2]/div[2]/div/form/div[1]/div[3]/div[1]/div/div[1]/div[1]/div[2]/div/div/div/button[5]")
             private WebElement country;
 
-   @FindBy(xpath = "//div[2]/div/div[5]/div[3]/div[2]/div[2]/div/form/div[1]/div[3]/div[1]/div/div[1]/div[1]/div[2]/div/label/div")
-        protected WebElement countrySet;
-
-    @FindBy(xpath ="//form/div[1]/div[3]/div[1]/div/div[1]/div[2]/div[2]/div/label/div/span" )
+    @FindBy(className ="container__row")
     private WebElement selectCity;
 
     @FindBy(xpath = "//form/div[1]/div[3]/div[1]/div/div[1]/div[2]/div[2]/div/div/div/button[8]")
     private WebElement city;
 
-    @FindBy(xpath = "//div[2]/div/div[5]/div[3]/div[2]/div[2]/div/form/div[1]/div[3]/div[1]/div/div[1]/div[2]/div[2]/div/label/div")
-    protected WebElement citySet;
+    @FindBy(xpath = "/html/body/div[2]/div/div[5]/div[3]/div[2]/div[2]/div/form/div[1]/div[3]/div[1]/div/div[1]/div[3]/div[2]/div/label/input")
+            private WebElement selectEnglishLevel;
 
-    @FindBy(xpath = "//div[2]/div/div[5]/div[3]/div[2]/div[2]/div/form/div[1]/div[3]/div[1]/div/div[1]/div[3]/div[2]/div/label/div")
-    private WebElement selectEnglishLevel;
-
-   @FindBy(xpath = "/html/body/div[2]/div/div[5]/div[3]/div[2]/div[2]/div/form/div[1]/div[3]/div[1]/div/div[1]/div[3]/div[2]/div/label/div]")
-   protected WebElement EnglishLevelSet;
-
-   @FindBy(xpath = "//div[2]/div/div[5]/div[3]/div[2]/div[2]/div/form/div[1]/div[3]/div[1]/div/div[1]/div[3]/div[2]/div/div/div/button[5]")
+   @FindBy(css = "button[data-value=\"4\"][title=\"Средний (Intermediate)\"]")
     protected WebElement EnglishLevel;
 
-    @FindBy(xpath = "//div[2]/div/div[5]/div[3]/div[2]/div[2]/div/form/div[1]/div[3]/div[2]/div[2]/div/div/div[1]/div/div/div/label/div")
+    @FindBy(name = "name=\"contact-0-service\"")
     private WebElement selectContact;
 
     @FindBy(xpath = "//div[5]/div[3]/div[2]/div[2]/div/form/div[1]/div[3]/div[1]/div/div[1]/div[3]/div[2]/div/div/div/button[5]")
@@ -91,7 +82,7 @@ public class PersonalPage extends BaseClass
     @FindBy(id = "id_contact-1-value")
     protected WebElement contact1;
 
-    @FindBy(css = "[data-title='Уровень знания английского языка']")
+    @FindBy(className = "container__col.container__col_9.container__col_md-8.container__col_middle")
     private WebElement LevelContainer;
 
     @FindBy(css="[title='Сохранить и продолжить']")
@@ -102,18 +93,22 @@ public class PersonalPage extends BaseClass
         Input(inputlnamelatin, LnameLatin);
         Input(date_of_birthInput, DateOfBirth);
 
-        ScrollDown("1000");
+        ScrollDown("500");
         Click(selectCountry);
         Click(country);
-        countrySetText=GetData(countrySet);
+        countrySetText=GetData(selectCountry);
 
         Click(selectCity);
         Click(city);
-        citySetText=GetData(citySet);
+        citySetText=GetData(selectCity);
 
-        Click(selectEnglishLevel);
-        Click(EnglishLevel);
-        EnglishLevelText=GetData(EnglishLevelSet);
+        //Click(selectEnglishLevel);
+        JavascriptExecutor je =(JavascriptExecutor) driver;
+        je.executeScript("arguments[0].click;",selectEnglishLevel);
+
+        //Click(EnglishLevel);
+        je.executeScript("arguments[0].click;",EnglishLevel);
+        EnglishLevelText=GetData(selectEnglishLevel);
 
         Click(selectContact);
         Click(Skype);
@@ -128,7 +123,7 @@ public class PersonalPage extends BaseClass
 
     }
       private void Input (WebElement inputLocator, String inputData){
-         new WebDriverWait(driver, 5).
+         new WebDriverWait(driver, 10).
                 until(ExpectedConditions.elementToBeClickable(inputLocator));
         Actions action = new Actions(driver);
         action.moveToElement(inputLocator).perform();

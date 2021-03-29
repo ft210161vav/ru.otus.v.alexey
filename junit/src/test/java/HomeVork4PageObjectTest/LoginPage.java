@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class LoginPage extends BaseClass{
+public class LoginPage extends BasePage{
 
     @FindBy(className = "new-log-reg__text-item")
     private WebElement regTitle;
@@ -19,33 +19,27 @@ public class LoginPage extends BaseClass{
     @FindBy(className = "header2__right")
     private WebElement loginRegButton;
 
-    @FindBy(className ="new-log-reg__body")
+    @FindBy(css = "div[data-mode='login'] input[name='email']")
     private WebElement emailInput;
-    @FindBy(className = "new-log-reg__form.js-login")
-    private WebElement emailInput1;
 
     By passwordLocator = By.name("password");
-    @FindBy(name ="password")
+    @FindBy(css = "input[name='password'][type=\"password\"]")
     private WebElement passwordInput;
 
-    @FindBy(className ="new-button.new-button_full.new-button_blue.new-button_md")
+    @FindBy(css ="div[data-mode='login'] button[type='submit']")
     private WebElement loginButton;
 
-    @FindBy(className = "new-log-reg__social-item.new-ic.new-ic-google-white-square")
-    private WebElement google;
+    @FindBy(css = "[href='/learning/'")
+    protected WebElement personalRoom;
+
+    @FindBy(css = "div.nav__items [href='/lk/biography/personal/']")//header2-menu
+    protected WebElement personalData;
 
     public LoginPage() {
-        super(driver);
 
         PageFactory.initElements(driver,this);
 
     }
-  public LoginPage openPage(String url){
-        driver.get(url);
-        return this;
-   }
-
-
 
     public LoginPage EnterRegButton() {
         new WebDriverWait(driver, 10)
@@ -56,14 +50,7 @@ public class LoginPage extends BaseClass{
                    return this;
        }
 
-    public LoginPage googleClick() {
-        new WebDriverWait(driver, 15).until(ExpectedConditions.visibilityOf(google));
-        Actions action = new Actions(driver);
-        action.moveToElement(google).build().perform();
-        google.click();
-        return this;
-    }
-    private void Click(WebElement inputLocator){
+     protected void Click(WebElement inputLocator){
         new WebDriverWait(driver, 10).
                 until(ExpectedConditions.elementToBeClickable(inputLocator));
         Actions action = new Actions(driver);
@@ -74,11 +61,11 @@ public class LoginPage extends BaseClass{
         new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(emailInput));
         action.moveToElement(emailInput).build().perform();
         emailInput.click();
-        Click(emailInput1);
+        Click(emailInput);
         emailInput.sendKeys(email);
         return this;
     }
-        protected LoginPage typePassword(String password) {
+       protected LoginPage typePassword(String password) {
             new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(passwordLocator));
             Actions action = new Actions(driver);
             action.moveToElement(passwordInput).click().perform();
