@@ -30,9 +30,7 @@ public class PersonalPage extends BasePage
             FnameLatin=property.getProperty("fnameLatin");
             LnameLatin=property.getProperty("lnameLatin");
             DateOfBirth = property.getProperty("DateOfBirth");
-            //BasePage basePage = openPage("https://otus.ru/lk/biography/personal");
-
-        } catch (IOException e) {
+          } catch (IOException e) {
             System.err.println("ОШИБКА: Файл свойств отсуствует!");
         }
     }
@@ -58,7 +56,7 @@ public class PersonalPage extends BasePage
     @FindBy(xpath = "//form/div[1]/div[3]/div[1]/div/div[1]/div[2]/div[2]/div/div/div/button[8]")
     private WebElement city;
 
-    @FindBy(xpath = "/html/body/div[2]/div/div[5]/div[3]/div[2]/div[2]/div/form/div[1]/div[3]/div[1]/div/div[1]/div[3]/div[2]/div/label/input")
+    @FindBy(xpath = "/html/body/div[2]/div/div[5]/div[3]/div[2]/div[2]/div/form/div[1]/div[3]/div[1]/div/div[1]/div[3]/div[2]/div/div")
             private WebElement selectEnglishLevel;
 
    @FindBy(css = "button[data-value=\"4\"][title=\"Средний (Intermediate)\"]")
@@ -82,7 +80,7 @@ public class PersonalPage extends BasePage
     @FindBy(id = "id_contact-1-value")
     protected WebElement contact1;
 
-    @FindBy(className = "container__col.container__col_9.container__col_md-8.container__col_middle")
+    @FindBy(xpath = "/html/body/div[2]/div/div[5]/div[3]/div[2]/div[2]/div/form/div[1]/div[3]/div[1]/div/div[1]/div[3]/div[2]/div/div")
     private WebElement LevelContainer;
 
     @FindBy(css="[title='Сохранить и продолжить']")
@@ -102,12 +100,12 @@ public class PersonalPage extends BasePage
         Click(city);
         citySetText=GetData(selectCity);
 
+        ScrollDown("300");
         //Click(selectEnglishLevel);
         JavascriptExecutor je =(JavascriptExecutor) driver;
         je.executeScript("arguments[0].click;",selectEnglishLevel);
 
-        //Click(EnglishLevel);
-        je.executeScript("arguments[0].click;",EnglishLevel);
+        Click(EnglishLevel);
         EnglishLevelText=GetData(selectEnglishLevel);
 
         Click(selectContact);
